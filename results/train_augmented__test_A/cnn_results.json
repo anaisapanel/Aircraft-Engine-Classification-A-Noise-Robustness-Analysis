@@ -1,0 +1,150 @@
+{
+  "experiment": "train_augmented__test_A",
+  "model": "HierarchicalCNN",
+  "stage1": {
+    "mean_accuracy": 0.9244188845333884,
+    "std_accuracy": 0.031196572829013662,
+    "mean_f1_macro": 0.9082345615827178,
+    "std_f1_macro": 0.04024963916415921
+  },
+  "stage2": {
+    "mean_accuracy": 0.872423945044161,
+    "std_accuracy": 0.01110275613246788,
+    "mean_f1_macro": 0.46527704530794417,
+    "std_f1_macro": 0.0965942115504794
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "stage1": {
+        "accuracy": 0.8810810810810811,
+        "f1_macro": 0.8522640379496651
+      },
+      "stage2": {
+        "accuracy": 0.8802747791952895,
+        "f1_macro": 0.596429340905394,
+        "report": "              precision    recall  f1-score   support\n\n      Piston       0.39      0.32      0.35        38\n   Turboprop       0.80      0.47      0.59       149\n    Turbofan       0.90      0.99      0.94       820\n  Turboshaft       1.00      0.33      0.50        12\n\n    accuracy                           0.88      1019\n   macro avg       0.77      0.53      0.60      1019\nweighted avg       0.87      0.88      0.87      1019\n",
+        "confusion_matrix": [
+          [
+            12,
+            11,
+            15,
+            0
+          ],
+          [
+            14,
+            70,
+            65,
+            0
+          ],
+          [
+            3,
+            6,
+            811,
+            0
+          ],
+          [
+            2,
+            0,
+            6,
+            4
+          ]
+        ],
+        "labels": [
+          "Piston",
+          "Turboprop",
+          "Turbofan",
+          "Turboshaft"
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "stage1": {
+        "accuracy": 0.9532442748091603,
+        "f1_macro": 0.9451934259338426
+      },
+      "stage2": {
+        "accuracy": 0.8802747791952895,
+        "f1_macro": 0.4327912144800118,
+        "report": "              precision    recall  f1-score   support\n\n      Piston       1.00      0.08      0.15        38\n   Turboprop       0.74      0.57      0.64       150\n    Turbofan       0.90      0.99      0.94       819\n  Turboshaft       0.00      0.00      0.00        12\n\n    accuracy                           0.88      1019\n   macro avg       0.66      0.41      0.43      1019\nweighted avg       0.87      0.88      0.86      1019\n",
+        "confusion_matrix": [
+          [
+            3,
+            17,
+            18,
+            0
+          ],
+          [
+            0,
+            86,
+            64,
+            0
+          ],
+          [
+            0,
+            11,
+            808,
+            0
+          ],
+          [
+            0,
+            3,
+            9,
+            0
+          ]
+        ],
+        "labels": [
+          "Piston",
+          "Turboprop",
+          "Turbofan",
+          "Turboshaft"
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "stage1": {
+        "accuracy": 0.9389312977099237,
+        "f1_macro": 0.9272462208646454
+      },
+      "stage2": {
+        "accuracy": 0.8567222767419038,
+        "f1_macro": 0.3666105805384269,
+        "report": "              precision    recall  f1-score   support\n\n      Piston       0.00      0.00      0.00        38\n   Turboprop       0.70      0.44      0.54       150\n    Turbofan       0.87      0.99      0.93       819\n  Turboshaft       0.00      0.00      0.00        12\n\n    accuracy                           0.86      1019\n   macro avg       0.39      0.36      0.37      1019\nweighted avg       0.80      0.86      0.82      1019\n",
+        "confusion_matrix": [
+          [
+            0,
+            15,
+            23,
+            0
+          ],
+          [
+            0,
+            66,
+            84,
+            0
+          ],
+          [
+            0,
+            12,
+            807,
+            0
+          ],
+          [
+            0,
+            1,
+            11,
+            0
+          ]
+        ],
+        "labels": [
+          "Piston",
+          "Turboprop",
+          "Turbofan",
+          "Turboshaft"
+        ]
+      }
+    }
+  ]
+}

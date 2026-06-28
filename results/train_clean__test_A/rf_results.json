@@ -1,0 +1,160 @@
+{
+  "experiment": "train_clean__test_A",
+  "model": "RandomForest",
+  "mean_accuracy": 0.9151912577148319,
+  "std_accuracy": 0.0019182585445598464,
+  "mean_f1_macro": 0.5269236425986086,
+  "std_f1_macro": 0.026633494921929315,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.9160572337042925,
+      "f1_macro": 0.5050295871486381,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.95      0.98      0.96      2126\n      Piston       0.50      0.05      0.10        38\n   Turboprop       0.63      0.32      0.43       149\n    Turbofan       0.86      0.91      0.89       820\n  Turboshaft       1.00      0.08      0.15        12\n\n    accuracy                           0.92      3145\n   macro avg       0.79      0.47      0.51      3145\nweighted avg       0.91      0.92      0.90      3145\n",
+      "confusion_matrix": [
+        [
+          2082,
+          0,
+          13,
+          31,
+          0
+        ],
+        [
+          24,
+          2,
+          1,
+          11,
+          0
+        ],
+        [
+          30,
+          1,
+          48,
+          70,
+          0
+        ],
+        [
+          57,
+          1,
+          14,
+          748,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          9,
+          1
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.9169847328244275,
+      "f1_macro": 0.5644131330879996,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.95      0.99      0.96      2125\n      Piston       0.40      0.11      0.17        38\n   Turboprop       0.66      0.29      0.41       150\n    Turbofan       0.87      0.90      0.88       819\n  Turboshaft       1.00      0.25      0.40        12\n\n    accuracy                           0.92      3144\n   macro avg       0.77      0.51      0.56      3144\nweighted avg       0.91      0.92      0.91      3144\n",
+      "confusion_matrix": [
+        [
+          2094,
+          2,
+          3,
+          26,
+          0
+        ],
+        [
+          21,
+          4,
+          1,
+          12,
+          0
+        ],
+        [
+          35,
+          3,
+          44,
+          68,
+          0
+        ],
+        [
+          61,
+          1,
+          19,
+          738,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          5,
+          3
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.912531806615776,
+      "f1_macro": 0.5113282075591881,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.95      0.98      0.96      2125\n      Piston       0.67      0.11      0.18        38\n   Turboprop       0.59      0.29      0.39       150\n    Turbofan       0.84      0.91      0.87       819\n  Turboshaft       0.50      0.08      0.14        12\n\n    accuracy                           0.91      3144\n   macro avg       0.71      0.47      0.51      3144\nweighted avg       0.90      0.91      0.90      3144\n",
+      "confusion_matrix": [
+        [
+          2077,
+          0,
+          10,
+          38,
+          0
+        ],
+        [
+          21,
+          4,
+          3,
+          10,
+          0
+        ],
+        [
+          22,
+          0,
+          44,
+          83,
+          1
+        ],
+        [
+          57,
+          2,
+          17,
+          743,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          6,
+          1
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    }
+  ]
+}
