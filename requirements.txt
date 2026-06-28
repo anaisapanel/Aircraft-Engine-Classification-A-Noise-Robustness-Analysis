@@ -1,0 +1,17 @@
+# Pipeline dependencies (lower bounds known to work).
+# Pin to a lockfile (pip-compile / uv) before reporting numbers.
+
+# ── Pre-processing ───────────────────────────────────────────────────────────
+numpy>=1.24,<3
+pandas>=2.0
+scikit-learn>=1.3
+soundfile>=0.12
+librosa>=0.10
+tqdm>=4.65
+
+# ── Training / evaluation ────────────────────────────────────────────────────
+torch>=2.0
+imbalanced-learn>=0.11   # SMOTE in src/train_and_evaluate.py:run_rf_fold
+
+# ── Tests ────────────────────────────────────────────────────────────────────
+pytest>=7

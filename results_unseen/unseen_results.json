@@ -1,0 +1,329 @@
+{
+  "rf": {
+    "model": "RandomForest",
+    "mean_accuracy": 0.6559139784946236,
+    "std_accuracy": 0.030413194889743953,
+    "mean_f1_macro": 0.15835897435897436,
+    "std_f1_macro": 0.004496473890622154,
+    "labels": [
+      "background",
+      "Piston",
+      "Turboprop",
+      "Turbofan",
+      "Turboshaft"
+    ],
+    "folds": [
+      {
+        "fold": 0,
+        "accuracy": 0.6774193548387096,
+        "f1_macro": 0.16153846153846155,
+        "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      0.68      0.81        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           0.68        31\n   macro avg       0.20      0.14      0.16        31\nweighted avg       1.00      0.68      0.81        31\n",
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            21,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "fold": 1,
+        "accuracy": 0.6129032258064516,
+        "f1_macro": 0.152,
+        "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      0.61      0.76        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           0.61        31\n   macro avg       0.20      0.12      0.15        31\nweighted avg       1.00      0.61      0.76        31\n",
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.6774193548387096,
+        "f1_macro": 0.16153846153846155,
+        "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      0.68      0.81        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           0.68        31\n   macro avg       0.20      0.14      0.16        31\nweighted avg       1.00      0.68      0.81        31\n",
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            21,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "cnn": {
+    "model": "HierarchicalCNN",
+    "stage1": {
+      "mean_accuracy": 0.22580645161290322,
+      "std_accuracy": 0.1393707677076959,
+      "mean_f1_macro": 0.17419290948702715,
+      "std_f1_macro": 0.08820330656670983
+    },
+    "stage2": {
+      "mean_accuracy": 1.0,
+      "std_accuracy": 0.0,
+      "mean_f1_macro": 0.25,
+      "std_f1_macro": 0.0
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "stage1": {
+          "accuracy": 0.0967741935483871,
+          "f1_macro": 0.08823529411764706,
+          "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n    aircraft       1.00      0.10      0.18        31\n\n    accuracy                           0.10        31\n   macro avg       0.50      0.05      0.09        31\nweighted avg       1.00      0.10      0.18        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              28,
+              3
+            ]
+          ]
+        },
+        "stage2": {
+          "accuracy": 1.0,
+          "f1_macro": 0.25,
+          "report": "              precision    recall  f1-score   support\n\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        31\n   macro avg       0.25      0.25      0.25        31\nweighted avg       1.00      1.00      1.00        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              31,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "Piston",
+            "Turboprop",
+            "Turbofan",
+            "Turboshaft"
+          ]
+        }
+      },
+      {
+        "fold": 1,
+        "stage1": {
+          "accuracy": 0.41935483870967744,
+          "f1_macro": 0.29545454545454547,
+          "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n    aircraft       1.00      0.42      0.59        31\n\n    accuracy                           0.42        31\n   macro avg       0.50      0.21      0.30        31\nweighted avg       1.00      0.42      0.59        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              18,
+              13
+            ]
+          ]
+        },
+        "stage2": {
+          "accuracy": 1.0,
+          "f1_macro": 0.25,
+          "report": "              precision    recall  f1-score   support\n\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        31\n   macro avg       0.25      0.25      0.25        31\nweighted avg       1.00      1.00      1.00        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              31,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "Piston",
+            "Turboprop",
+            "Turbofan",
+            "Turboshaft"
+          ]
+        }
+      },
+      {
+        "fold": 2,
+        "stage1": {
+          "accuracy": 0.16129032258064516,
+          "f1_macro": 0.1388888888888889,
+          "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n    aircraft       1.00      0.16      0.28        31\n\n    accuracy                           0.16        31\n   macro avg       0.50      0.08      0.14        31\nweighted avg       1.00      0.16      0.28        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              26,
+              5
+            ]
+          ]
+        },
+        "stage2": {
+          "accuracy": 1.0,
+          "f1_macro": 0.25,
+          "report": "              precision    recall  f1-score   support\n\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        31\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        31\n   macro avg       0.25      0.25      0.25        31\nweighted avg       1.00      1.00      1.00        31\n",
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              31,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "Piston",
+            "Turboprop",
+            "Turbofan",
+            "Turboshaft"
+          ]
+        }
+      }
+    ]
+  }
+}

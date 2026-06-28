@@ -1,0 +1,62 @@
+# ── Python bytecode / build caches ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+.installed.cfg
+pip-wheel-metadata/
+
+# ── Test / type / lint caches ───────────────────────────────────────────────
+.pytest_cache/
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+# ── Coverage ────────────────────────────────────────────────────────────────
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+htmlcov/
+nosetests.xml
+
+# ── Notebooks ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Pipeline outputs ────────────────────────────────────────────────────────
+results/
+data/output/
+data/output_snr/
+
+# ── Raw / extracted audio (too large to version-control) ────────────────────
+# Only metadata CSVs under data/ are tracked; WAVs and zips stay local.
+*.zip
+data/audio/
+data/fold_*/
+
+# ── Editor / OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Environments ────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env

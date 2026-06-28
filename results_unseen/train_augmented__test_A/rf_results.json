@@ -1,0 +1,160 @@
+{
+  "experiment": "train_augmented__test_A",
+  "model": "RandomForest",
+  "mean_accuracy": 1.0,
+  "std_accuracy": 0.0,
+  "mean_f1_macro": 0.20000000000000004,
+  "std_f1_macro": 2.7755575615628914e-17,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        11\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        11\n   macro avg       0.20      0.20      0.20        11\nweighted avg       1.00      1.00      1.00        11\n",
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    },
+    {
+      "fold": 1,
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        10\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        10\n   macro avg       0.20      0.20      0.20        10\nweighted avg       1.00      1.00      1.00        10\n",
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    },
+    {
+      "fold": 2,
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "report": "              precision    recall  f1-score   support\n\n  background       0.00      0.00      0.00         0\n      Piston       0.00      0.00      0.00         0\n   Turboprop       0.00      0.00      0.00         0\n    Turbofan       1.00      1.00      1.00        10\n  Turboshaft       0.00      0.00      0.00         0\n\n    accuracy                           1.00        10\n   macro avg       0.20      0.20      0.20        10\nweighted avg       1.00      1.00      1.00        10\n",
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "background",
+        "Piston",
+        "Turboprop",
+        "Turbofan",
+        "Turboshaft"
+      ]
+    }
+  ]
+}
